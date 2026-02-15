@@ -1,0 +1,10 @@
+{
+  "name": "interslack",
+  "version": "0.1.0",
+  "description": "Slack integration for Claude Code — send messages, read channels, test integrations.",
+  "author": { "name": "MK", "email": "mistakeknot@vibeguider.org" },
+  "repository": "https://github.com/mistakeknot/interslack",
+  "license": "MIT",
+  "keywords": ["slack", "messaging", "integration", "communication"],
+  "skills": ["./skills/slack-messaging"]
+}
