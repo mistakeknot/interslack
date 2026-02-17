@@ -1,0 +1,15 @@
+{
+  "module_summary": "InterSlack connects workflow events to team communication channels with actionable context.",
+  "roadmap": {
+    "now": [
+      {"id": "ISLK-N1", "title": "Stabilize event delivery for gated actions and release notifications.", "priority": "P1"}
+    ],
+    "next": [
+      {"id": "ISLK-N2", "title": "Add digest mode for milestone and quality-gate changes.", "priority": "P2"},
+      {"id": "ISLK-N3", "title": "Add secure token management and tenant-aware channel routing.", "priority": "P1"},
+      {"id": "ISLK-L1", "title": "Create richer interaction patterns with context summaries and action links.", "priority": "P2"}
+    ],
+    "later": [
+    ]
+  }
+}
