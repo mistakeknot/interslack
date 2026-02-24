@@ -2,9 +2,9 @@
 
 Slack integration for Claude Code.
 
-## What This Does
+## What this does
 
-Send messages, read channels, and test webhook integrations from Claude Code. Uses browser session tokens (xoxc + xoxd) via slackcli, so you don't need to create a Slack app or deal with OAuth — just grab your session tokens from the browser and go.
+Send messages, read channels, and test webhook integrations from Claude Code. Uses browser session tokens (xoxc + xoxd) via slackcli, so you don't need to create a Slack app or deal with OAuth: just grab your session tokens from the browser and go.
 
 Straightforward plumbing for when you need Claude to post updates or check channels.
 
