@@ -1,6 +1,6 @@
 # interslack
 
-Slack integration for Claude Code.
+Slack integration for Claude Code, Codex, and Kimi Code.
 
 ## What this does
 
