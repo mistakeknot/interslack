@@ -9,6 +9,14 @@ allowed-tools: Bash(slackcli:*, curl:*)
 
 Send and read Slack messages from the command line using `slackcli` (shaharia-lab/slackcli).
 
+## Codex paths and existing authorization
+
+Resolve this `SKILL.md` symlink and set `SKILL_DIR` to its absolute parent
+directory. The token helper below belongs to `SKILL_DIR/scripts/`, not the
+current project. Discover an existing Slack connector or CLI before using the
+installation reference. Preserve the user's authorized read/send scope; reading
+a channel does not authorize posting, credential extraction, or installation.
+
 ## Installation
 
 Download the binary:
@@ -29,7 +37,7 @@ slackcli uses browser session tokens (xoxc + xoxd) - no Slack app creation requi
 ### Interactive Setup
 
 ```bash
-./scripts/extract-tokens <workspace-url>
+"$SKILL_DIR/scripts/extract-tokens" <workspace-url>
 ```
 
 This walks the user through extracting tokens from browser DevTools.
@@ -122,10 +130,10 @@ slackcli supports multiple workspaces. Run the auth flow for each workspace you 
 
 ```bash
 # Add first workspace
-./scripts/extract-tokens https://workspace-one.slack.com
+"$SKILL_DIR/scripts/extract-tokens" https://workspace-one.slack.com
 
 # Add second workspace
-./scripts/extract-tokens https://workspace-two.slack.com
+"$SKILL_DIR/scripts/extract-tokens" https://workspace-two.slack.com
 
 # List all authenticated workspaces
 slackcli auth list

@@ -2,6 +2,11 @@
 
 Send and read Slack messages from the command line using `slackcli`.
 
+Resolve the installed skill symlink and set `SKILL_DIR` to its actual directory
+before invoking bundled helpers. A read request authorizes reading; sending
+messages, installing tools, and extracting authentication need their own task
+authority. Never print or include tokens in prompts, evidence, or commits.
+
 ## When to Invoke
 
 Use when asked to send or read Slack messages, check channels, test Slack integrations, or interact with a Slack workspace.
@@ -10,7 +15,7 @@ Use when asked to send or read Slack messages, check channels, test Slack integr
 
 ```bash
 # Interactive setup (walks through browser token extraction)
-./scripts/extract-tokens <workspace-url>
+"$SKILL_DIR/scripts/extract-tokens" <workspace-url>
 
 # Manual setup
 slackcli auth login-browser --xoxd="xoxd-..." --xoxc="xoxc-..." --workspace-url=https://workspace.slack.com
